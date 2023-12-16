@@ -27,7 +27,7 @@ a{
 
 body{
   background-color: var(--bgc);
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 :root{
   --primaryfont: 'Roboto', sans-serif;
