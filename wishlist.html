@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+ <!-- fontawesome -->
+ <link rel="stylesheet" href="./asset/vendor/css/all.min.css">
+ <!-- slikslider -->
+ <link rel="stylesheet" href="./asset/vendor/css/slick.css">
+ <!-- bootsrap icon cdn -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+ <!-- bootsrap -->
+ <link rel="stylesheet" href="./asset/vendor/css/bootstrap.min.css">
+ <!-- aoc -->
+ <!-- <link rel="stylesheet" href="./assets/vendor/css/aos.css"> -->
+ <!-- venobox -->
+ <link rel="stylesheet" href="./asset/vendor/css/venobox.min.css">
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <!-- common CSS -->
+ <link rel="stylesheet" href="./asset/css/common/wishlistcommon.css">
+ <!-- my style  CSS-->
+ <link rel="stylesheet" href="./asset/css/style/wishlist.css">
+ <!-- responsive CSS -->
+ <link rel="stylesheet" href="./asset/css/responsive/Wishlistresponsive.css">
+</head>
+<body>
+  <!-- Header Section Starts -->
+  <header id="Header">
+    <div class="container">
+        <div class="row">
+            <div class="headerCnt col-9 col-lg-6">
+              <div class="row">
+                <div class="hours col-6 col-lg-3">
+                  <span><i class="bi bi-stopwatch-fill"></i>7.30 AM - 9.30 PM </span>
+              </div>
+              <div class="headerCnt1 col-6 col-lg-3">
+                  <span><i class="bi bi-telephone-fill"></i><a href="tel:+880 1630 225 015">+880 1630 225 015</a></span>
+              </div>
+              </div>
+            </div>
+            <div class="headerCnt2 col-3 col-lg-6">
+                <a href="#"><button>REGISTER</button></a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header Section Ends -->
+<!-- NavBar Section Starts -->
+<nav class="navbar navbar-expand-lg" style="background-color: var(--FourColor);">
+<div class="container">
+<a class="navbar-brand" href="./wishlist.html"><img src="./asset/images/Logo Img/logo.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span><img src="./asset/images/Nav Menu/more.png" alt=""></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="./about_us.html">ABOUT</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="./items.html">ITEMS</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="./Contract.html">CONTACT</a>
+    </li>
+    
+  </ul>
+  <div class="DeliveryIcon"><a href="#"><i class="bi bi-cart3"></i><span>2</span></a></div>
+  <div class="DeliveryCnt">
+      <h1>Delivery Order</h1>
+      <span class="NumberCnt"><p><a href="tel:+880 1630 225 015">+880 1630 225 015</a></p></span>
+  </div>
+  <div class="DeliveryImg">
+      <img src="./asset/images/Logo Img/Delivery.png" alt="">
+  </div>
+  <a href="#" class="Btn"><button>LOGIN</button></a>
+
+</div>
+</div>
+</nav>
+<!-- NavBar Section Ends -->
+
+
+   <!-- main starts here -->
+   <main>
+    <!-- banner starts here -->
+    <section id="banner">
+        <div class="banner" style="background-image: url(./asset/images/wishlist/mycart-banner-img.png);">
+          <div class="container">
+          <div class="row">
+            <div class="banner-cnt d-flex align-items-center justify-content-center">
+                <h1>Wishlist</h1>
+            </div>
+          </div>
+          </div>
+        </div>
+
+    </section>
+    <!-- banner ends here -->
+    <!-- mycart-table starts here -->
+    <section id="cart_table">
+         <div class="cart_table col-lg">
+           <div class="container">
+
+
+           
+            <table class="table" style="width: 100%;">
+            
+                <tr>
+                  <th scope="col">Product</th>
+                  <th scope="col">Product Name</th>
+                  <th scope="col">Unit Price</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Add to cart</th>
+                  <th scope="col">Action</th>
+                </tr>
+              
+              <tbody>
+
+                <!-- Product 1 -->
+                <tr>
+
+                  <td style="width: 16%;">
+                    <div class="cart-img">
+                      <img src="./asset/images/wishlist/cart-img-1.png" alt="">
+                    </div>
+                  </td>
+
+                  <td style="width: 20%;" class="c-text">Belgium waffles with strawberries</td>
+
+                  <td style="width: 15%;"><p>$150</p></td>
+
+
+
+                  <td style="width: 16%;">
+
+                    <div class="quantity">
+                      <button class="plus-btn" type="button" name="button">
+                        <span class="span"><i class="fa-solid fa-plus"></i></span>
+                      </button>
+                      <input type="text" class="num" name="name" value="0">
+                      <button class="minus-btn" type="button" name="button">
+                        <span class="span"><i class="fa-solid fa-minus"></i></span>
+                      </button>
+                    </div>
+
+                  </td>
+
+
+                  <td style="width: 18%;"><a href="./my_cart.html"><button class="CartBtN">Add to cart</button></a></td>
+
+
+                  <td>
+                    <a href="#"><span class="action"><i class="fa-solid fa-xmark"></i></span></a>
+                  </td>
+                </tr>
+                
+
+
+                <!-- PRoduct 2 -->
+                <tr>
+
+                  <td >
+                    <div class="cart-img">
+                      <img src="./asset/images/wishlist/cart-img-2.png" alt="">
+                    </div>
+                  </td>
+
+                  <td class="c-text">Chicken skewers</td>
+
+                  <td><p>$150</p></td>
+
+
+
+                  <td>
+                    <div class="quantity">
+                      <button class="plus-btn2" type="button" name="button">
+                        <span class="span"><i class="fa-solid fa-plus"></i></span>
+                      </button>
+                      <input type="text" class="num2" name="name" value="0">
+                      <button class="minus-btn2" type="button" name="button">
+                        <span class="span"><i class="fa-solid fa-minus"></i></span>
+                      </button>
+                    </div>
+                
+                  </td>
+
+
+                  <td style="width: 18%;"><a href="./my_cart.html"><button class="CartBtN">Add to cart</button></a></td>
+
+
+                  <td>
+                    <a href="#"><span class="action"><i class="fa-solid fa-xmark"></i></span></a>
+                  </td>
+                </tr>
+                <!-- product 2 end -->
+                  <!-- product 3 -->
+
+                <tr>
+
+                    <td >
+                      <div class="cart-img">
+                        <img src="./asset/images/wishlist/cart-img-2.png" alt="">
+                      </div>
+                    </td>
+  
+                    <td class="c-text">Belgium waffles with strawberries</td>
+  
+                    <td><p>$150</p></td>
+  
+  
+  
+                    <td>
+  
+                      <div class="quantity">
+                        <button class="plus-btn" type="button" name="button">
+                          <span class="span"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <input type="text" class="num" name="name" value="0">
+                        <button class="minus-btn" type="button" name="button">
+                          <span class="span"><i class="fa-solid fa-minus"></i></span>
+                        </button>
+                      </div>
+  
+                    </td>
+  
+  
+                    <td style="width: 18%;"><a href="./my_cart.html"><button class="CartBtN">Add to cart</button></a></td>
+  
+  
+                    <td>
+                      <a href="#"><span class="action"><i class="fa-solid fa-xmark"></i></span></a>
+                    </td>
+                  </tr>
+                  <!-- product 4 -->
+                  <tr>
+
+                    <td >
+                      <div class="cart-img">
+                        <img src="./asset/images/wishlist/cart-img-1.png" alt="">
+                      </div>
+                    </td>
+  
+                    <td class="c-text">Chicken skewers</td>
+  
+                    <td><p>$150</p></td>
+  
+  
+  
+                    <td>
+                      <div class="quantity">
+                        <button class="plus-btn2" type="button" name="button">
+                          <span class="span"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <input type="text" class="num2" name="name" value="0">
+                        <button class="minus-btn2" type="button" name="button">
+                          <span class="span"><i class="fa-solid fa-minus"></i></span>
+                        </button>
+                      </div>
+                  
+                    </td>
+  
+  
+                    <td style="width: 18%;"><a href="./my_cart.html"><button class="CartBtN">Add to cart</button></a></td>
+  
+  
+                    <td>
+                      <a href="#"><span class="action"><i class="fa-solid fa-xmark"></i></span></a>
+                    </td>
+                  </tr>
+                  
+  
+              </tbody>
+            </table>
+       
+           </div>
+         </div>
+    </section>
+  
+    <!-- cart table ends here -->
+
+
+</main>
+<!-- main ends here -->
+
+
+<!-- footer section starts -->
+<footer id="contactus">
+  <h2>Our Branch</h2>
+  <div class="footer_cnt">
+    <div class="container">
+      <div class="row">
+        <!-- Branch 1 -->
+        <div class="contactinfo col-4 col-lg-4">
+             <h1>Robert Food</h1>
+             <h4>1986 Hilltop DriveBorger, TX 79007</h4>
+            <div class="contactCnt">
+              <div class="row">
+                <div class="hours_text col-12 col-lg-5">
+                  <span><i class="bi bi-stopwatch-fill"></i> 7.30 AM - 9.30 PM </span>
+                </div>
+                <div class="contact_text col-12 col-lg-5">
+                  <span><i class="bi bi-telephone-fill"></i><a href="tel:+880 1630 225 015"> +880 1630 225 015</a></span>
+                </div>
+               </div>
+            </div>
+            <div class="maps_cnt">
+              <a href="#">Click to View Google Map</a>
+            </div>
+        </div>
+           
+         <!-- Branch 2 -->
+        <div class="contactinfo col-4 col-lg-4">
+          <h1>Mark A. Reed Food</h1>
+          <h4>4877 Rose AvenueNew Orleans, LA 70112</h4>
+         <div class="contactCnt">
+           <div class="row">
+             <div class="hours_text col-12 col-lg-5">
+               <span><i class="bi bi-stopwatch-fill"></i> 7.30 AM - 9.30 PM </span>
+             </div>
+             <div class="contact_text col-12 col-lg-5">
+               <span><i class="bi bi-telephone-fill"></i><a href="tel:+880 1630 225 015"> +880 1630 225 015</a></span>
+             </div>
+            </div>
+         </div>
+         <div class="maps_cnt">
+           <a href="#">Click to View Google Map</a>
+         </div>
+     </div>  
+     <!-- Branch 3 -->
+     <div class="contactinfo col-4 col-lg-4">
+      <h1>Karie K. Hill Food</h1>
+      <h4>1509 Peaceful LaneCleveland, OH 44115</h4>
+     <div class="contactCnt">
+       <div class="row">
+         <div class="hours_text col-12 col-lg-5">
+           <span><i class="bi bi-stopwatch-fill"></i> 7.30 AM - 9.30 PM </span>
+         </div>
+         <div class="contact_text col-12 col-lg-5">
+           <span><i class="bi bi-telephone-fill"></i><a href="tel:+880 1630 225 015"> +880 1630 225 015</a></span>
+         </div>
+        </div>
+     </div>
+     <div class="maps_cnt">
+       <a href="#">Click to View Google Map</a>
+     </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer section ends -->
+
+<!-- UnderFooter section starts -->
+<section id="underFooter">
+  <h5>Copyright © | 2023</h5>
+</section>
+<!-- UnderFooter section Ends  -->
+
+
+ 
+
+
+
+<!-- jQuery -->
+<script src="./asset/vendor/js/jquery-3.7.1.min.js"></script>
+<!-- bootsrap -->
+<script src="./asset/vendor/js/bootstrap.bundle.min.js"></script>
+<!-- iconify -->
+<script src="./asset/vendor/js/iconify-icon.min.js"></script>
+<!-- slickslider -->
+<script src="./asset/vendor/js/slick.min.js"></script>
+<!-- aoc -->
+<script src="./asset/vendor/js/aos.js"></script>
+<!-- venobox -->
+<script src="./asset/vendor/js/venobox.min.js"></script>
+<!-- java script -->
+<script src="./asset/js/app.js"></script>
+
+</body>
+</html>
